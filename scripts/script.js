@@ -54,9 +54,12 @@ let eraserIcon = document.querySelector('.eraser')
 let eraserText = document.querySelector(".eraserText")
 
     eraserIcon.addEventListener('click', function (e){
+        eraserIcon.classList.toggle('big')
         eraserMenu.classList.toggle('eraserSub')
         eraserText.classList.toggle('eraserTextReveal')
+        eraserIcon.classList.toggle('big')
     })
+
 
     pixelIcon.addEventListener('click', function(e){
         slider.classList.toggle('sliderShow')
@@ -76,6 +79,7 @@ let eraserText = document.querySelector(".eraserText")
                 let rainbow = rainbowMenu.classList.contains(`rainbowSub`)
 
                     if (value === true) {
+                        rainbowMenu.classList.remove('rainbowSub')
                         block.style.backgroundColor = `${eraserWhite.value}`
                     } else if (value === false && rainbow === false ) {
                         block.style.backgroundColor = `${colorPick.value}`

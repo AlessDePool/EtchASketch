@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="backgrounds">
+        <div class="colorBackground"></div>
+        <div class="rainbowBackground"></div>
+        <div class="eraserBackground"></div>
+        <div class="pixelBackground"></div>
+    </div>
     <div class="subMenus">
         <div class="color" id="menu">
         <input type="color" value="#ee2e31" class="colorPick">
@@ -19,25 +27,22 @@
             <p class="rainbowCheck">Active</p>
         </div>
         <div class="shadingMenu" id="menu">
-            <p class="shadeCheck">Active</p>
+            <p class="shadeCheck"></p>
         </div>
         <div class="eraserMenu" id="menu">
             <p class="eraserText">Active</p>
             <input type="color" class="eraserWhite" value="#FFFFFF">
         </div>
         <div class="pixelMenu" id="menu">
-            <input type="range" min="1" max="64" value="10" class="slider" >
+            <input type="range" min="1" max="30" value="15" class="slider" >
         </div>
     </div>
 <div class="generalOutline">
         <div class="options">
             <div class="colorPicker"> <img src="images/colorpicker.png" alt="color picker icon"></div>
-            <div class="rainbow"><img src="images/rainbow--v1.png" alt=""></div>
-            
-            <div class="eraser"><img src="images/eraser.png" alt=""></div>
-            <div>
-                <p class="pixelDensity">Px</p>
-            </div>
+            <div class="rainbow"><img src="images/rainbow--v1.png" alt="rainbow icon"></div>
+            <div class="eraser"><img src="images/eraser.png" alt="eraser icon"></div>
+            <div class="pixelDensity"><img src="images/191781-200.png" alt="pixel icon"></div>
         </div>
         <div class="whiteboard">
             <section class="container">
